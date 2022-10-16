@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 三元组
+ * 三数之和
  * 题目链接：https://leetcode.cn/problems/3sum/
  *
  * @author zhanghongang
@@ -15,7 +15,7 @@ import java.util.List;
 public class Algo15ThreeNum {
 
     /**
-     * 求三元组
+     * 求三数之和
      *
      * @param nums num数组
      * @return {@link List}<{@link List}<{@link Integer}>>
