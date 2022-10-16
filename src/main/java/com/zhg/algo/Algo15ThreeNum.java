@@ -6,13 +6,20 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * ??num 15
+ * 三元组
+ * 题目链接：https://leetcode.cn/problems/3sum/
  *
  * @author zhanghongang
  * @date 2022/10/15
  */
-public class ThreeNum_15 {
+public class Algo15ThreeNum {
 
+    /**
+     * 求三元组
+     *
+     * @param nums num数组
+     * @return {@link List}<{@link List}<{@link Integer}>>
+     */
     public List<List<Integer>> threeSum(int[] nums) {
         // 数组为空或数组长度小于3，返回空数组
         if (nums == null || nums.length < 3) {
@@ -81,4 +88,5 @@ public class ThreeNum_15 {
 
         return tripleList;
     }
+
 }
