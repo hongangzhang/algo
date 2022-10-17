@@ -67,7 +67,7 @@ public class Algo169MajorityElement {
         Arrays.sort(nums);
 
         // 取数组中间位置的下标：奇数为中间，偶数为中间-1
-        int middleIndex = nums.length/2;
+        int middleIndex = nums.length / 2;
 
         return nums[middleIndex];
     }
