@@ -14,7 +14,6 @@ class Algo206ReverseLinkedListTest {
         for (int i = 1; i < 5; i++) {
             Algo206ReverseLinkedList.ListNode newNode =
                     new Algo206ReverseLinkedList.ListNode(i);
-            newNode.next = null;
             current.next = newNode;
 
             current = current.next;
