@@ -1,14 +1,12 @@
 package com.zhg.algo;
 
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class Algo169MajorityElementTest {
+class Algo169MajorityElementTest extends Specification {
 
     @Test
     void majorityElement() {

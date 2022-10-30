@@ -2,14 +2,12 @@ package com.zhg.algo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class Algo23MergeKSortedListsTest {
+class Algo23MergeKSortedListsTest extends Specification {
 
     List<Algo23MergeKSortedLists.ListNode> listNodes = new ArrayList<>();
     Algo23MergeKSortedLists.ListNode head = new Algo23MergeKSortedLists.ListNode(0);

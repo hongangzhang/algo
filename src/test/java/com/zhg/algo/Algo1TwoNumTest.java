@@ -1,13 +1,12 @@
 package com.zhg.algo;
 
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class Algo1TwoNumTest {
+class Algo1TwoNumTest extends Specification {
 
     @Test
     void twoSum() {
@@ -21,7 +20,7 @@ class Algo1TwoNumTest {
         int[] result = twoNum.twoSum(nums, 3);
 
         String collect = Arrays.stream(result)
-                .mapToObj(num -> String.valueOf(num))
+                .mapToObj(String::valueOf)
                 .collect(Collectors.joining(","));
         System.out.println("result: " + collect);
     }

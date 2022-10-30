@@ -2,11 +2,12 @@ package com.zhg.algo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-class Algo41FirstMissingPositiveTest {
+class Algo41FirstMissingPositiveTest extends Specification {
 
     Algo41FirstMissingPositive firstMissingPositive;
     int [] nums;

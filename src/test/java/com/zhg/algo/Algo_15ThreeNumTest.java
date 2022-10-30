@@ -1,10 +1,11 @@
 package com.zhg.algo;
 
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
 import java.util.List;
 
-class Algo_15ThreeNumTest {
+class Algo_15ThreeNumTest extends Specification {
 
     @Test
     void threeSum() {

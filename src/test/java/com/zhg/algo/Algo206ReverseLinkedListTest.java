@@ -2,8 +2,9 @@ package com.zhg.algo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
-class Algo206ReverseLinkedListTest {
+class Algo206ReverseLinkedListTest extends Specification {
 
     Algo206ReverseLinkedList reverseLinkedList = new Algo206ReverseLinkedList();
     Algo206ReverseLinkedList.ListNode head = new Algo206ReverseLinkedList.ListNode(0);

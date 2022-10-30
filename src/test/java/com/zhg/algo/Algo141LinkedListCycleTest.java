@@ -2,10 +2,9 @@ package com.zhg.algo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import spock.lang.Specification;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class Algo141LinkedListCycleTest {
+class Algo141LinkedListCycleTest extends Specification {
 
     Algo141LinkedListCycle.ListNode head = new Algo141LinkedListCycle.ListNode(0);
 
