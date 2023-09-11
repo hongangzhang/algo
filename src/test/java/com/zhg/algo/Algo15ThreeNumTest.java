@@ -5,7 +5,7 @@ import spock.lang.Specification;
 
 import java.util.List;
 
-class Algo_15ThreeNumTest extends Specification {
+class Algo15ThreeNumTest extends Specification {
 
     @Test
     void threeSum() {

@@ -1,5 +1,6 @@
 package com.zhg.algo;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spock.lang.Specification;
@@ -26,6 +27,6 @@ class Algo141LinkedListCycleTest extends Specification {
     @Test
     void hasCycle() {
         boolean hasCycle = linkedListCycle.hasCycle(head);
-        System.out.println("hasCycle: " + hasCycle);
+        Assertions.assertEquals(true, hasCycle);
     }
 }
