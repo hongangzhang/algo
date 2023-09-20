@@ -19,14 +19,21 @@ class Algo25ReverseNodesInKgroupTest {
         head = newListNode;
 
         for (int i = 1; i < 5; i++) {
-            ListNode newNode = new ListNode(i);
-            newListNode.next = newNode;
+            newListNode.next = new ListNode(i);
             newListNode = newListNode.next;
         }
     }
 
     @Test
     void reverseKGroup() {
-        ListNode listNode = algo25ReverseNodesInKgroup.reverseKGroup(head.next, 2);
+        ListNode newHead = algo25ReverseNodesInKgroup.reverseKGroup(head.next, 2);
+        System.out.println();
+
+        while (newHead != null) {
+            System.out.print(newHead.val);
+            System.out.print(", ");
+            newHead = newHead.next;
+        }
+        System.out.println();
     }
 }

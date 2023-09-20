@@ -25,20 +25,18 @@ public class Algo25ReverseNodesInKgroup {
         // 每 k 个 Node 当做一个单链表翻转，最后不足 k 个 Node 不翻转
 
         // 参数检查
-        if(head == null || head.next == null || k < 1) {
+        if(head == null || head.next == null || k <= 1) {
             return head;
         }
 
         ListNode newHead = null;
-        ListNode now = head;
         ListNode pre = null;
         int nodeSplitKnum = 0;
         int nodeNum = 0;
 
         ListNode current = head;
-        ListNode kNode = head;
         ListNode curKnodeStart = head;
-        ListNode nextKnodeStart = head;
+        ListNode nextKnodeStart;
         while(current != null) {
             // 最后不足k个
             if (current.next == null && nodeSplitKnum < k - 1) {
@@ -58,12 +56,11 @@ public class Algo25ReverseNodesInKgroup {
                 pre = curKnodeStart;
                 curKnodeStart = nextKnodeStart;
                 current = nextKnodeStart;
-                nextKnodeStart = null;
                 nodeSplitKnum = 0;
+            } else {
+                current = current.next;
+                nodeSplitKnum = nodeSplitKnum+1;
             }
-
-            current = current.next;
-            nodeSplitKnum = nodeSplitKnum+1;
             nodeNum = nodeNum + 1;
         }
 
@@ -78,7 +75,7 @@ public class Algo25ReverseNodesInKgroup {
 
         ListNode pre = null;
         ListNode now = head;
-        ListNode next = null;
+        ListNode next;
 
         while(now != null) {
             next = now.next;
