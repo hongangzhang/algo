@@ -1,6 +1,8 @@
 package com.zhg.algo;
 
 
+import com.zhg.algo.common.ListNode;
+
 /**
  * 141. 环形链表
  * 题目链接：https://leetcode.cn/problems/linked-list-cycle/
@@ -40,16 +42,6 @@ public class Algo141LinkedListCycle {
         }
 
         return true;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode (int val) {
-            this.val = val;
-            this.next = null;
-        }
     }
 
 }

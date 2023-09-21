@@ -1,5 +1,7 @@
 package com.zhg.algo;
 
+import com.zhg.algo.common.ListNode;
+
 /**
  * 206. 反转链表
  * 题目链接：https://leetcode.cn/problems/reverse-linked-list/
@@ -75,23 +77,5 @@ public class Algo206ReverseLinkedList {
         head.next = null;
 
         return newHead;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-            this.next = null;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

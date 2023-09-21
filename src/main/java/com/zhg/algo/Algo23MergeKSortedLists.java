@@ -1,6 +1,8 @@
 package com.zhg.algo;
 
 
+import com.zhg.algo.common.ListNode;
+
 /**
  * 23. 合并K个升序链表
  * 题目链接：https://leetcode.cn/problems/merge-k-sorted-lists/
@@ -82,13 +84,4 @@ public class Algo23MergeKSortedLists {
         return newHead.next;
     }
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode (int val) {
-            this.val = val;
-            this.next = null;
-        }
-    }
 }

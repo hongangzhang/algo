@@ -1,5 +1,6 @@
 package com.zhg.algo;
 
+import com.zhg.algo.common.ListNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spock.lang.Specification;
@@ -7,14 +8,14 @@ import spock.lang.Specification;
 class Algo206ReverseLinkedListTest extends Specification {
 
     Algo206ReverseLinkedList reverseLinkedList = new Algo206ReverseLinkedList();
-    Algo206ReverseLinkedList.ListNode head = new Algo206ReverseLinkedList.ListNode(0);
+    ListNode head = new ListNode(0);
 
     @BeforeEach
     void setUp() {
-        Algo206ReverseLinkedList.ListNode current = head;
+        ListNode current = head;
         for (int i = 1; i < 5; i++) {
-            Algo206ReverseLinkedList.ListNode newNode =
-                    new Algo206ReverseLinkedList.ListNode(i);
+            ListNode newNode =
+                    new ListNode(i);
             current.next = newNode;
 
             current = current.next;
@@ -33,7 +34,7 @@ class Algo206ReverseLinkedListTest extends Specification {
 
     @Test
     void reverseList() {
-        Algo206ReverseLinkedList.ListNode newHead = reverseLinkedList.reverseList(head);
+        ListNode newHead = reverseLinkedList.reverseList(head);
         System.out.println();
 
         while (newHead != null) {

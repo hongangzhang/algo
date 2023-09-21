@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+import static jdk.nashorn.internal.objects.Global.print;
+
 
 class Algo25ReverseNodesInKgroupTest {
 
@@ -27,13 +29,6 @@ class Algo25ReverseNodesInKgroupTest {
     @Test
     void reverseKGroup() {
         ListNode newHead = algo25ReverseNodesInKgroup.reverseKGroup(head.next, 2);
-        System.out.println();
-
-        while (newHead != null) {
-            System.out.print(newHead.val);
-            System.out.print(", ");
-            newHead = newHead.next;
-        }
-        System.out.println();
+        print(newHead);
     }
 }
